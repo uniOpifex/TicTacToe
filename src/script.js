@@ -1,5 +1,6 @@
 $(function() {
     let turn = "X";
+    
     let moves = 0;
     var resetGame = function() {
         // reset the board itself
@@ -23,8 +24,11 @@ $(function() {
     function changeTurn() {
         if (turn === "X") {
           turn = "O";
+          $('#uxturn').html(turn);
         } else {
           turn = "X";
+          $('#uxturn').html(turn);
+
         }
       };
 

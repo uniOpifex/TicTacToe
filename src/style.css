@@ -1,8 +1,38 @@
+body {
+    text-align: center;
+    background-color: lightblue;
+ 
+}
+
+body h1 {
+    font-family: Helvetica;
+font-weight: bold;
+font-size: 4em;
+}
+
+
+
+.header {
+    width: 600px;
+    display: inline-grid;
+    grid-template: repeat(1, 1fr) / repeat(2, 1fr);
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#thing{
+    grid-column-start: 1;
+    grid-column-end: two;
+    grid-row-start: row2-start;
+    grid-row-end: 2;
+}
 .game-board
 {
 	width: 600px;
 	height: 600px;
-	margin: 0 auto;
+    margin: 30px auto;
+    
   background-color: #34495e;
   color: #fff;
   border: 6px solid #2c3e50;
@@ -24,6 +54,3 @@
   align-items: center;
 }
 
-.xtoken {
-
-}
